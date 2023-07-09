@@ -49,6 +49,8 @@ function Payment() {
         dispatch({
           type: "EMPTY_BASKET",
         });
+
+        navigate.replace("/Orders");
       });
   };
 

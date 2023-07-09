@@ -6,6 +6,8 @@ import Payment from "./Payment";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
+import Orders from "./Orders";
+import ProductDetail from "./ProductDetail";
 
 const promise = loadStripe(
   "pk_test_51N5z6KKWLTAcuCBtS9mA00hfM9jURZnEwCw6lhqrrXrayh1SogeNQUek4vzgIbyIGv6I2C2DL7ZxbIshY5h1kTZd00UJtbwvNO"
@@ -27,6 +29,15 @@ function App() {
               </Elements>
             }
           />
+          <Route
+            path="/detail"
+            element={
+              <>
+                <ProductDetail />
+              </>
+            }
+          />
+          <Route path="/Orders" element={<Orders />} />
         </Routes>
       </div>
     </Router>
