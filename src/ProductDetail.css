@@ -1,0 +1,25 @@
+.container__Detail {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Features__Detail {
+  margin: 0 auto;
+  justify-content: center;
+  border: 1px solid #000;
+}
+
+.Features__Detail__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
