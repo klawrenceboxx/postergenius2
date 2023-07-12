@@ -23,3 +23,27 @@ h1 {
   align-items: center;
   margin: 0 auto;
 }
+
+.Promotion__Detail {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.Suggested__Detail {
+  margin-top: 2rem;
+}
+
+.Suggested__Detail__container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 2rem;
+  gap: 3rem;
+}
+
+.Suggested__Detail__container img {
+  width: 100%;
+  height: 100%;
+}

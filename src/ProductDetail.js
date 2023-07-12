@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ImageGallery from "./ImageGallery";
 import koi from "./images/koi.png";
 import koi2 from "./images/koi2.png";
@@ -14,6 +14,8 @@ const images = [
 ];
 
 function ProductDetail() {
+  const [activeTab, setActiveTab] = useState("productDetails");
+
   return (
     <div className="ProductDetail">
       <section className="hero__Detail">
@@ -56,9 +58,84 @@ function ProductDetail() {
           </div>
         </div>
       </section>
-      <section className="FAQ__Detail"></section>
-      <section className="Promotion__Detail"></section>
-      <section className="Suggested__Detail"></section>
+      <section className="FAQ__Detail">
+        <div>
+          <div>
+            <button onClick={() => setActiveTab("productDetails")}>
+              Product Details
+            </button>
+            <button onClick={() => setActiveTab("faq")}>FAQ</button>
+          </div>
+
+          {activeTab === "productDetails" && (
+            <div>
+              <h2>Product Details</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                vitae diam eu massa aliquam aliquet. Sed euismod, nisl quis
+                tincidunt aliquam, nunc nibh aliquet nunc, vitae aliquam nisl
+                nunc vitae mauris. Donec euismod, nisl quis tincidunt aliquam,
+                nunc nibh aliquet nunc, vitae aliquam nisl nunc vitae mauris.
+                Donec euismod, nisl quis tincidunt aliquam, nunc nibh aliquet
+              </p>
+            </div>
+          )}
+
+          {activeTab === "faq" && (
+            <div>
+              <h2>FAQ</h2>
+              <p>
+                Donec euismod, nisl quis tincidunt aliquam, nunc nibh aliquet
+                nunc, vitae aliquam nisl nunc vitae mauris. Donec euismod, nisl
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                vitae diam eu massa aliquam aliquet. Sed euismod, nisl quis
+                tincidunt aliquam, nunc nibh aliquet nunc, vitae aliquam nisl
+                nunc vitae mauris. Donec euismod, nisl quis tincidunt aliquam,
+                nunc nibh aliquet nunc, vitae aliquam nisl nunc vitae mauris.
+              </p>
+            </div>
+          )}
+        </div>
+      </section>
+      <section className="Promotion__Detail">
+        <div className="promotion__Detail__left">
+          <img src={koi} alt="" />
+        </div>
+        <div className="promotion__Detail__right">
+          <h1>Heading</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae
+            diam eu massa aliquam aliquet. Sed euismod, nisl quis tincidunt
+            aliquam, nunc nibh aliquet nunc, vitae aliquam nisl nunc vitae
+            mauris. Donec euismod, nisl quis tincidunt aliquam,
+          </p>
+        </div>
+      </section>
+      <section className="Suggested__Detail">
+        <h1>You Might Also Like</h1>
+        <div className="Suggested__Detail__container">
+          <div className="Suggested__Detail__container__item1">
+            <img src={koi} alt="" />
+            <h3>Title</h3>
+            <h3>Price</h3>
+          </div>
+          <div className="Suggested__Detail__container__item2">
+            <img src={koi} alt="" />
+            <h3>Title</h3>
+            <h3>Price</h3>
+          </div>
+          <div className="Suggested__Detail__container__item3">
+            <img src={koi} alt="" />
+            <h3>Title</h3>
+            <h3>Price</h3>
+          </div>
+          <div className="Suggested__Detail__container__item4">
+            <img src={koi} alt="" />
+            <h3>Title</h3>
+            <h3>Price</h3>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
