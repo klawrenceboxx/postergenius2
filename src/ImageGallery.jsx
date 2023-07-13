@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./ImageGallery.css";
 
 function ImageGallery({ images }) {
   // Initial image is the first one in the array
@@ -10,13 +11,15 @@ function ImageGallery({ images }) {
   };
 
   return (
-    <div>
-      <img
-        src={currentImage}
-        alt="Current"
-        style={{ width: "500px", height: "500px" }}
-      />
+    <div className="image__container">
       <div>
+        <img
+          src={currentImage}
+          alt="Current"
+          style={{ width: "500px", height: "500px" }}
+        />
+      </div>
+      <div className="image__list">
         {images.map((image, index) => (
           <img
             key={image.id}

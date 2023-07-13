@@ -1,20 +1,83 @@
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hero__Detail {
+  /* border: 1px solid #000; */
+  margin-bottom: 2rem;
+}
+
+.button-and-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid #000; */
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
 .container__Detail {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 2rem;
+  gap: 3rem;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0 auto;
-  text-align: center;
+.button__Detail {
+  display: inline-flex;
+  padding: 1em 2em;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+
+  border-radius: 100px;
+  border: 2px solid var(--black, #150826);
+  background: #fff;
+}
+
+.button__Detail:hover,
+.options:hover {
+  background: var(--black, #150826);
+  color: #fff;
+  cursor: pointer;
+}
+
+.right__Detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* border: 1px solid #000; */
+}
+
+.options {
+  display: inline-flex;
+  padding: 1em 2em;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+
+  border-radius: 100px;
+  border: 2px solid var(--black, #150826);
+  background: #fff;
+  /* border: 1px solid #000; */
+}
+
+.right__Detail h1 {
+  text-align: left;
 }
 
 .Features__Detail {
-  margin: 0 auto;
+  margin: 2rem auto;
   justify-content: center;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
+
+  /* display: flex; */
+  gap: 1rem;
+  width: 95%;
+  max-width: 1000px;
 }
 
 .Features__Detail__container {
@@ -24,15 +87,37 @@ h1 {
   margin: 0 auto;
 }
 
+.FAQ__Detail {
+  margin: 2rem auto;
+  justify-content: center;
+  /* border: 1px solid #000; */
+
+  /* display: flex; */
+  gap: 1rem;
+  width: 95%;
+  max-width: 1000px;
+}
+
 .Promotion__Detail {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  margin-top: 2rem;
+  margin: 2rem auto;
+
+  gap: 1rem;
+  width: 95%;
+  max-width: 1000px;
+  /* border: 1px solid #000; */
 }
 
 .Suggested__Detail {
-  margin-top: 2rem;
+  margin: 2rem auto;
+  justify-content: center;
+  /* border: 1px solid #000; */
+
+  /* display: flex; */
+  gap: 1rem;
+  width: 95%;
+  max-width: 1000px;
 }
 
 .Suggested__Detail__container {
@@ -46,4 +131,16 @@ h1 {
 .Suggested__Detail__container img {
   width: 100%;
   height: 100%;
+}
+
+.Newsletter__Detail {
+  margin: 4rem auto;
+  text-align: center;
+  /* border: 1px solid #000; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 95%;
+  max-width: 1000px;
 }
